@@ -13,17 +13,17 @@ pipeline{
         }
         stage('init'){
             steps{
-                sh 'terraform init'
+                bat 'terraform init'
             }
         }
         stage('plan'){
             steps{
-                sh 'terraform plan'
+                bat 'terraform plan'
             }
         }
         stage('apply'){
             steps{
-                sh 'terraform apply -auto-approve'
+                bat 'terraform apply -auto-approve'
             }
         }
     }
