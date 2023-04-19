@@ -25,12 +25,7 @@ pipeline{
             steps{
                 bat 'terraform apply -auto-approve'
             }
-        }
-        stage('destroy'){
-            steps{
-                bat 'terraform destroy -auto-approve'
-            }
-        }
+        }   
     }
 }
 
